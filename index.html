@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="header__logo">Instagram</div>
+            <div class="header__search">
+                <input type="text" placeholder="e.g. People">
+            </div>
+            <div>
+                <a href="#" class="button button--blue">Get the App</a>
+                <a href="#" class="button">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- User Profile Area -->
+    <div class="profile">
+        <div class="inner">
+            <div class="profile__image">
+                <img src="http://unsplash.it/200?image=70" alt="">
+            </div>
+            <div class="profile__info">
+                <h2>Username</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloribus, inventore perferendis incidunt amet quam.</p>
+                <a class="link" href="#">www.twitter.com</a>
+                <ul class="profile__meta">
+                    <li><strong>100</strong> Posts</li>
+                    <li><strong>789</strong> Followers</li>
+                    <li><strong>50</strong> Following</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End of User Profile Area -->
+
+    <!-- Images Area -->
+    <div class="images">
+        <div class="inner">
+            <a href="" class="image"><img src="http://unsplash.it/320/?image=99" alt="">
+                <span class="image__cover">View Image</span>
+            </a>
+            <a href="" class="image">
+                <img src="http://unsplash.it/320/?image=199" alt="">
+                <span class="image__cover">View Image</span>
+            </a>
+            <a href="" class="image">
+                <img src="http://unsplash.it/320/?image=299" alt="">
+                <span class="image__cover">View Image</span>
+            </a>
+            <a href="" class="image">
+                <img src="http://unsplash.it/320/?image=399" alt="">
+                <span class="image__cover">View Image</span>
+            </a>
+            <a href="" class="image">
+                <img src="http://unsplash.it/320/?image=499" alt="">
+                <span class="image__cover">View Image</span>
+            </a>
+        </div>
+    </div>
+    <!-- End of Images Area -->
+
+    <script>
+        //Create an event for when the window is scrolled
+        window.addEventListener('scroll', function(){
+            var distance = window.pageYOffset || document.documentElement.scrollTop
+            var header = document.querySelector('header')
+
+            // If the window has scrolled more that 200 pixels, add the .header--small class to the header
+            // Otherwise, remove the .header--small class
+            if(distance > 200){
+                header.classList.add('header--small')
+            } else {
+                header.classList.remove('header--small')
+            }
+        })
+    </script>
+
+</body>
+</html>
