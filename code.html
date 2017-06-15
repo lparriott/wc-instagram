@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button id="myButton">Click Me!</button>
+
+    <script>
+        //var myButton =document.getElementById('myButton')
+       var myButton = document.querySelector('#myButton')
+       var myInput = document.querySelector('input')
+        myButton.addEventListener('click', function(){
+           // var message = 'You typed: '+myInput.value
+           var message = `You typed: ${myInput.value} ${myInput.value}`
+            console.log(message)
+        })
+
+        // New Variable Declaration CONST and LET
+        const name="Lisa"
+        let city = 'Peru' 
+
+        console.log(name)
+
+        /*** Fun with Functions ***/
+
+        //Make a function named getName that has no parameters
+        function getName() {
+            
+        }
+
+        //Make the same function, but using "assignment" sytax
+       // var getName2 = fuction() {}
+
+
+        //Make a function, using the "assignment" syntax
+        //The function name is addNumbers and it has TWO parameters num1 and num2
+        //Have the function return the sum of the numbers
+
+        var addNumbers = function(num1, num2){
+            let total = num1 + num2
+            return total
+        }
+
+        let sum = addNumbers(1,2)
+        console.log(sum)
+        
+        //Just like above, make a multNumbers function
+        //It's passed TWO parameters: num1, num2
+        //It returns the project of those numbers
+        //Now declaring it as an arrow function
+        // => this is called the fat arrow
+
+        var multNumbers = (num1, num2) => {
+            return num1 * num2
+        }
+
+        let product = multNumbers(3,6)
+        console.log(product)
+
+        // using arrow functions
+        //make a function named double which is passed ONE parameter called num and returns num *2
+        var double = (num) => {
+                return num * 2
+        }
+        console.log ( double(10) )
+
+        // Make a triple function, just like double
+        //here we will use the horter syntax
+        //If on variable: no parentesis are needed
+        //If the only statement is a return statement, you don't need curly braces or the "return" word
+            //the long way:
+        var triple = (num) => {
+                return num * 3
+        }
+        console.log ( triple(7) )
+
+        //the short way
+        var triple = num => num *3
+        console.log(triple(9))
+        
+        //if no parameters are passed to the function you must have the parenthesis 
+        var something = () => {
+
+        }
+
+        
+       
+
+
+
+
+    </script>
+
+</body>
+</html>

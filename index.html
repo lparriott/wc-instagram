@@ -28,7 +28,7 @@
     <div class="profile">
         <div class="inner">
             <div class="profile__image">
-                <img src="http://unsplash.it/200?image=70" alt="">
+                <img src="https://unsplash.it/200?image=70" alt="">
             </div>
             <div class="profile__info">
                 <h2>Username</h2>
@@ -47,44 +47,19 @@
     <!-- Images Area -->
     <div class="images">
         <div class="inner">
-            <a href="" class="image"><img src="http://unsplash.it/320/?image=99" alt="">
-                <span class="image__cover">View Image</span>
-            </a>
-            <a href="" class="image">
-                <img src="http://unsplash.it/320/?image=199" alt="">
-                <span class="image__cover">View Image</span>
-            </a>
-            <a href="" class="image">
-                <img src="http://unsplash.it/320/?image=299" alt="">
-                <span class="image__cover">View Image</span>
-            </a>
-            <a href="" class="image">
-                <img src="http://unsplash.it/320/?image=399" alt="">
-                <span class="image__cover">View Image</span>
-            </a>
-            <a href="" class="image">
-                <img src="http://unsplash.it/320/?image=499" alt="">
-                <span class="image__cover">View Image</span>
-            </a>
+                       
         </div>
     </div>
     <!-- End of Images Area -->
 
-    <script>
-        //Create an event for when the window is scrolled
-        window.addEventListener('scroll', function(){
-            var distance = window.pageYOffset || document.documentElement.scrollTop
-            var header = document.querySelector('header')
+    <div class="full hidden">
+        <img src="" alt="">
+    </div>
 
-            // If the window has scrolled more that 200 pixels, add the .header--small class to the header
-            // Otherwise, remove the .header--small class
-            if(distance > 200){
-                header.classList.add('header--small')
-            } else {
-                header.classList.remove('header--small')
-            }
-        })
-    </script>
+       
+    
+
+    <script src="scripts.js"></script>
 
 </body>
 </html>
